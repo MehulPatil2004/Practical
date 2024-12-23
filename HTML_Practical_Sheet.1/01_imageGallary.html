@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallary</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+    
+        header,
+        footer {
+            font-size: 25px;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        .images {
+            width: 100%;
+            height: 70%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+            padding: 0px 30px;
+            margin: 20px 0;
+            place-content: center;
+            place-items: center;
+        }
+    
+        .images img {
+            width: 230px;
+            height: 200px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .setup {
+        overflow: hidden;
+        border: solid 2px rgb(0, 0, 0);
+        border-radius: 10px;
+        height: 200px;
+        box-shadow: 5px 5px 20px 3px black;
+      }
+    
+        .images img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Image Gallary</h1>
+    </header>
+    <hr width="100%" size="6px" color="black" />
+    <div class="images">
+    <div class="setup"><img src="https://i.pinimg.com/736x/e8/f9/54/e8f954a1dcfeff700832b79dbdace733.jpg " alt="img.1"></div>
+    <div class="setup"><img src="https://t3.ftcdn.net/jpg/02/97/34/92/360_F_297349200_7d5US7hNgJYbAumfEI1EEJU81kkgLF9J.jpg" alt="img.2"></div>
+    <div class="setup"><img src="https://cdn.pixabay.com/photo/2018/09/23/20/56/sparrow-3698507_1280.jpg" alt="img.3"></div> 
+    <div class="setup"><img src="https://img.freepik.com/premium-photo/portrait-cute-rose-ringed-parakeet-also-known-as-green-parrot-sitting-top-tree_7954-3884.jpg?" alt="img.4"></div>
+    <div class="setup"><img src="https://media.istockphoto.com/id/495292220/photo/colorful-cute-toucan-tropical-bird-in-brazilian-amazon-blurred-background.jpg?s=612x612&w=0&k=20&c=UUgfaSISnRJOGQfmzsUQyWIo_RFWHe3JPBmO3K3E6LA=" alt="img.5"></div>
+    <div class="setup"><img src="https://photos1.blogger.com/blogger/1972/854/1600/brahmini_kite1.0.jpg" alt="img.6"></div>
+    <div class="setup"><img src="https://i.pinimg.com/736x/b9/e6/c9/b9e6c9c0b2699731f3583d9f267526ee.jpg" alt="img.7"></div>
+    <div class="setup"><img src="https://www.allaboutbirds.org/guide/assets/photo/297363481-480px.jpg" alt="img.8"></div>
+    <div class="setup"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvlqOPoLU3dpYX-GUPC0FE04YFD-qCAh7yzw&s" alt="img.9"></div>
+    <div class="setup"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_oPUWiCmolhqaaERwtGIOWsmFMvrYAdmYPTcNA3Uwhblj5fDCXvHwVZQJwnlTGmhYVw&usqp=CAU" alt="img.10"></div>
+    </div>
+    <hr width="100%" color="black" size="6px" />
+    <footer>
+        <h3>Copyright &COPY;2024 Image Gallary</h3>
+    </footer>
+</body>
+</html>

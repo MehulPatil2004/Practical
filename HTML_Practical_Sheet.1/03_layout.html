@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LAYOUT</title>
+</head>
+<body>
+    <style>
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .heading{
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            background-color: lightcoral;
+        }
+
+        .nav{
+            background-color: aqua;
+            height: 60px;
+        }
+
+        .nav a{
+            position: relative;
+            font-size: 20px;
+            margin: 85px;
+            top: 12px;
+        }
+
+        .main{
+            position: absolute;
+            width: 100%;
+            height: 410px;
+            margin-right: 10px;
+            background-color: lightpink;
+        }
+
+        .para{
+            text-align: center;
+            padding: 35px;
+        }
+
+        footer{
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+    <header> 
+        <div class="heading">
+            <h1>About html</h1>
+        </div>
+        <div class="nav">
+        <a href="#"target="_blank">Home</a>
+        <a href="#"target="_blank">Gallary</a>
+        <a href="#"target="_blank">About</a>
+        <a href="#"target="_blank">Contact</a>
+        <a href="#"target="_blank">Help</a>
+        <a href="#"target="_blank">Login/Signup</a>
+        </div>
+    </header>
+    <div class="main">
+    <p class="para">
+    HTML stands for HyperText Markup Language. It is the standard language used to create and structure content on the web.
+    It tells the web browser how to display text, links, images, and other forms of multimedia on a webpage. HTML sets up
+    the basic structure of a website, and then CSS and JavaScript add style and interactivity to make it look and function
+    better.
+    
+    How Does HTML Work? - HTML documents are plain-text files saved with an .html extension. Browsers read these documents,
+    interpret the markup (tags and attributes), and render the formatted content on your screen.
+
+    </p>
+    <p class="para">
+        CSS stands for Cascading Style Sheets. It is a stylesheet language used to style and enhance website presentation.
+            
+        CSS is one of the main three components of a webpage along with HTML and JavaScript.
+        HTML adds Structure to a Webpage, JavaScript adds logic to it and CSS makes it visually visually appealing or stylish.
+        It controls the layout of a web page i.e. how HTML elements will be displayed on a webpage.
+        CSS was released (in 1996), 3 years after HTML (in 1993). The main idea behind its use is, it allows the separation of
+        content (HTML) from presentation (CSS). This makes websites easier to maintain and more flexible.
+
+    </p>
+    </div>
+    <footer>
+        <hr />
+        <div>&copy;2022 html. All Right Reserved.</div>
+    </footer>
+</body>
+</html>
